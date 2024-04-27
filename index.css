@@ -8,9 +8,12 @@ body {
     background-color: #1F2937;
     margin:40px auto ;
     padding-top: 115px;
-    
 }
-h1 {
+
+.darkmode .box {
+    background-color: #E5e5e5;
+}
+.head {
     width: 354px;
     font-weight: bolder;
     font-size: 40px;
@@ -18,12 +21,17 @@ h1 {
     margin-bottom: 10px;
     color: white;
 }
-
+.darkmode .head {
+    color:#2b283a;
+}
 hr {
     width: 446px;
     border: 1px solid #2F3E53;
 }
-button {
+.darkmode hr {
+    border: 1px solid #d5d4d8;
+}
+#gen {
     width: 211px;
     height: 42px;
     margin-bottom: 35px; 
@@ -41,6 +49,10 @@ p {
     margin-left: 52px;
     margin-top: 51px;
 }
+.darkmode p {
+    color: #6B7280;
+}
+
 .fields {
     display: flex;
     justify-content: center;
@@ -65,8 +77,25 @@ p {
 .buttoninput {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
 }
 input {
     height: 40px;
+}
+.mode {
+   width: 40px;
+   height: 40px;
+   border: none;
+   background-image: url("Group\ 1.png");
+   background-size: cover;
+   border-radius: 4px;
+}
+.darkmode .mode {
+    background-image: url("Group\ 2.png");
+}
+
+.header {
+    display: flex;
+   align-items: center;
+   gap: 20px;
 }

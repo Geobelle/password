@@ -24,3 +24,13 @@ for (let i = 0; i < input; i++){
 }
 
 }
+
+function toogle() {
+   let h1El = document.querySelector("body")
+   if (h1El.classList.contains("darkmode")) {
+    h1El.classList.remove("darkmode")
+   }
+   else {
+    h1El.classList.add("darkmode")
+   }
+}
